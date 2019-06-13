@@ -1,6 +1,9 @@
 
 // Different Tools
 $(".axe").on("click", function changeToAxe() {
+    $(".axe").addClass("changeToolColor");
+    $(".pickaxe").removeClass("changeToolColor");
+    $(".shovel").removeClass("changeToolColor");
     $(".wood").on("click", function removeWood() {
         $(this).removeClass("wood").addClass("sky");
         updateInventory("wood");
@@ -9,9 +12,15 @@ $(".axe").on("click", function changeToAxe() {
         $(this).removeClass("trunk").addClass("sky");
         updateInventory("trunk");
     })
+    /*$(".stone").on("click", function () {
+        $(".axe").removeClass("changeToolColor");
+    })*/
 });
 
 $(".pickaxe").on("click", function changeToPickaxe() {
+    $(".pickaxe").addClass("changeToolColor");
+    $(".axe").removeClass("changeToolColor");
+    $(".shovel").removeClass("changeToolColor");
     $(".stone").on("click", function removeStone() {
         $(this).removeClass("stone").addClass("sky");
         updateInventory("stone");
@@ -19,6 +28,9 @@ $(".pickaxe").on("click", function changeToPickaxe() {
 });
 
 $(".shovel").on("click", function changeToShovel() {
+    $(".shovel").addClass("changeToolColor");
+    $(".axe").removeClass("changeToolColor");
+    $(".shovel").removeClass("changeToolColor");
     $(".dirt").on("click", function removeDirt() {
         $(this).removeClass("dirt").addClass("sky");
         updateInventory("dirt");
