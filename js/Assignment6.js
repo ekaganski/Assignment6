@@ -5,7 +5,7 @@ $(".axe").on("click", function changeToAxe() {
         $(this).removeClass("wood").addClass("sky");
         updateInventory("wood");
     })
-    $(".trunk").on("click", function removeWood() {
+    $(".trunk").on("click", function removeTrunk() {
         $(this).removeClass("trunk").addClass("sky");
         updateInventory("trunk");
     })
@@ -23,7 +23,7 @@ $(".shovel").on("click", function changeToShovel() {
         $(this).removeClass("dirt").addClass("sky");
         updateInventory("dirt");
     })
-    $(".dirt-with-grass").on("click", function removeDirt() {
+    $(".dirt-with-grass").on("click", function removeDirtWithGrass() {
         $(this).removeClass("dirt-with-grass").addClass("sky");
         updateInventory("dirt-with-grass");
     })
@@ -56,7 +56,7 @@ $("#inventory").on("click", function checkMaterial() {
             $(".sky").off("click");
         })
     } else if ($(this).hasClass("trunk")) {
-        $(".sky").on("click", function addStone() {
+        $(".sky").on("click", function addTrunk() {
             $(this).addClass("trunk").removeClass("sky");
             $("#inventory").attr("class", "");
             $(".sky").off("click");
@@ -74,7 +74,7 @@ $("#inventory").on("click", function checkMaterial() {
             $(".sky").off("click");
         })
     } else if ($(this).hasClass("dirt-with-grass")) {
-        $(".sky").on("click", function addDirt() {
+        $(".sky").on("click", function addDirtWithGrass() {
             $(this).addClass("dirt-with-grass").removeClass("sky");
             $("#inventory").attr("class", "");
             $(".sky").off("click");
