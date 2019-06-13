@@ -18,7 +18,7 @@ body{
 
   display: block;
   height: 100vh;
-  background-color: aqua;
+  background-color: skyblue;
 }
 #end {
   float: right;
@@ -40,6 +40,23 @@ body{
   margin-left: auto;
   margin-right: auto;
   border:  1px solid black;
+  cursor: pointer; 
+}
+#new-game, #instructions{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 11px;
+  border-style: none;
+  padding: 7px 7px;
+  margin: 10px auto;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 4px 4px 4px #888888;
+}
+#new-game:hover{
+  background-color: #c9c8c8;
+}
+#instructions:hover{
+  background-color: #c9c8c8;
 }
 .changeToolColor{
   border: 3px solid green;
@@ -69,6 +86,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   border:  1px solid black;
+  cursor: pointer; 
 }
 #boardArray {
   font-size: 0px;
@@ -79,11 +97,28 @@ body{
 .newDiv {
   width: 20px;
   height: 18.5px;
-  background-color: aqua;
+  background-color: skyblue;
   display: inline-block;
   font-size: 10px;
 }
-
+/* .sky {
+  background-color: deepskyblue;
+} */
+.sun {
+  background-color: yellow;
+}
+.cloud {
+  background-color: white;
+}
+/* .wood {
+  background-color: green;
+}
+.trunk {
+  background-color: brown;
+} */
+.stone {
+  background-color: gray;
+} 
 
 /* tiles start */
 .wood{
@@ -150,5 +185,10 @@ body{
   border-radius: 3px;
   border-style: none;
   color: black;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.start:hover{
+  background-color: #c9c8c8;
 }
 /* modal end */
