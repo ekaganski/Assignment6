@@ -57,3 +57,21 @@ $("#inventory").on("click", function checkMaterial() {
         })
     }
 })
+
+// board
+$(document).ready(makeBricks);
+
+function makeBricks() {
+    for (var j = 0; j < 31; j++) {
+        var row = [];
+
+        for (var i = 0; i < 31; i++) {
+            var newDiv = $("<div/>");
+            newDiv.attr("class", "newDiv");
+            newDiv.attr("column", `${i}`).attr("row", `${j}`);
+            row.push(newDiv);
+        }
+        $("#boardArray").append(row);
+    }
+}
+
