@@ -1,36 +1,35 @@
 body{
-    margin:0; 
+  margin:0; 
   /* centering the website */
   font-size: 0px;
+  /*height: 100vh; */
 }
 #main {
   width: 100%;
-  height: 100vh;
   display: flex; 
-  border:  1px solid black;
+ 
 }
 #menue {
   float: left;
   background-color: white;
-  width: 200px;
-  height: 100vh; 
-  border:  1px solid black;
+  width: 350px;
+  height: 100vh;
 }
-#middle
-{
-  /* background-color:lightblue; */
-  /* width: 100%;
-  height: 100vh; */
-  border: 1px solid black;
+#middle{
+
   display: block;
+  height: 100vh;
+  background-color: aqua;
 }
 #end {
   float: right;
   background-color: green; 
+  position: absolute;
+  right: 0px;
   width: 200px; 
   height: 100vh;
-  border:  1px solid black;
   display: flex;
+ 
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
@@ -42,6 +41,12 @@ body{
   margin-left: auto;
   margin-right: auto;
   border:  1px solid black;
+}
+#pickaxe{
+  background-image: url("../images/pickaxe.jpg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #axe{
   background-image: url("../images/axe.jpg");
@@ -55,7 +60,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-#memory-tool{
+#inventory{
   width: 50px;
   height: 50px;
   margin-top: 20px; 
@@ -67,7 +72,7 @@ body{
   font-size: 0px;
   margin: 0px;
   width: 620px;
-  height: 550px;
+  height: 575px;
 }
 .newDiv {
   width: 20px;
@@ -91,3 +96,72 @@ body{
 .trunk {
   background-color: brown;
 } */
+
+
+/* tiles start */
+.wood{
+  background-image: url("../images/wood.jpg");
+}
+.trunk{
+  background-image: url("../images/trunk.jpg");
+}
+.stone{
+  background-image: url("../images/stone.jpg");
+}
+.dirt{
+  background-image: url("../images/dirt.jpg");
+}
+.dirt-with-grass{
+  background-image: url("../images/dirt-with-grass.jpg");
+}
+.sky{
+  background-color: skyblue;
+}
+/* tiles end */
+
+
+/* modal start */
+.modal img {
+  width: 300px;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 445px;
+  padding: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  border-style: none;
+  background-image: url("../images/modal-bg.jpg");
+}
+.modal-content p {
+  padding: 70px 70px;
+  font-size: 11px;
+  line-height: 26px;
+}
+.modal-content .modal-footer button {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  border-style: none;
+}
+.modal.fade{
+  border-radius: 5px;
+}
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.start{
+  position: absolute;
+  bottom: 30px;
+  background: white;
+  height: 50px;
+  width: 100px;
+  border-radius: 3px;
+  border-style: none;
+  color: black;
+}
+/* modal end */
