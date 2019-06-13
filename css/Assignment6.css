@@ -76,3 +76,66 @@ body{
   display: inline-block;
   font-size: 10px;
 }
+
+
+/* tyles start */
+.wood{
+  background-image: url("");
+}
+.stone{
+  background-image: url("");
+}
+.dirt{
+  background-image: url("");
+}
+.sky{
+  background-color: skyblue;
+}
+/* tyles end */
+
+
+/* modal start */
+.modal img {
+  width: 300px;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 445px;
+  padding: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  border-style: none;
+  background-image: url("../images/modal-bg.jpg");
+}
+.modal-content p {
+  padding: 70px 70px;
+  font-size: 11px;
+  line-height: 26px;
+}
+.modal-content .modal-footer button {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  border-style: none;
+}
+.modal.fade{
+  border-radius: 5px;
+}
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.start{
+  position: absolute;
+  bottom: 30px;
+  background: white;
+  height: 50px;
+  width: 100px;
+  border-radius: 3px;
+  border-style: none;
+  color: black;
+}
+/* modal end */

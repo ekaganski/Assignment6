@@ -75,3 +75,7 @@ function makeBricks() {
     }
 }
 
+// modal
+$(document).ready(function () {
+    $("#myModal").modal("show");
+})
