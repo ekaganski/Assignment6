@@ -99,6 +99,21 @@ body{
   display: inline-block;
   font-size: 10px;
 }
+/* .sky {
+  background-color: deepskyblue;
+} */
+.sun {
+  background-color: yellow;
+}
+.cloud {
+  background-color: white;
+}
+/* .wood {
+  background-color: green;
+}
+.trunk {
+  background-color: brown;
+} */
 
 
 /* tiles start */
