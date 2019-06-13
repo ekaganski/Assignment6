@@ -503,3 +503,16 @@ function assignClass() {
 $(document).ready(function () {
     $("#myModal").modal("show");
 })
+<<<<<<< HEAD
+
+//new game
+$("#new-game").on("click", function refresh() {
+    window.location.reload();
+});
+
+// instructions
+$("#instructions").on("click", function modal() {
+    $("#myModal").modal("show");
+});
+=======
+>>>>>>> 0b1d918db69b02a5b42fe6980f3582b6f2fe5254
