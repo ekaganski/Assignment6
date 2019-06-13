@@ -498,12 +498,269 @@ function assignClass() {
             point.addClass("sky");
         }
     }
+    for (var j = 18; j < 19; j++) {
+        for (var i = 0; i < 1; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 18; j < 19; j++) {
+        for (var i = 1; i < 2; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 18; j < 19; j++) {
+        for (var i = 2; i < 3; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 18; j < 19; j++) {
+        for (var i = 3; i < 7; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("stone");
+        }
+    }
+    for (var j = 18; j < 19; j++) {
+        for (var i = 7; i < 19; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 18; j < 19; j++) {
+        for (var i = 19; i < 20; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 18; j < 19; j++) {
+        for (var i = 20; i < 23; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 18; j < 19; j++) {
+        for (var i = 23; i < 24; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 18; j < 19; j++) {
+        for (var i = 24; i < 31; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 19; j < 20; j++) {
+        for (var i = 0; i < 1; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 19; j < 20; j++) {
+        for (var i = 1; i < 2; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 19; j < 20; j++) {
+        for (var i = 2; i < 8; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("stone");
+        }
+    }
+    for (var j = 19; j < 20; j++) {
+        for (var i = 8; i < 19; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 19; j < 20; j++) {
+        for (var i = 19; i < 20; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 19; j < 20; j++) {
+        for (var i = 20; i < 23; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 19; j < 20; j++) {
+        for (var i = 23; i < 24; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 19; j < 20; j++) {
+        for (var i = 24; i < 31; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 0; i < 1; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 1; i < 2; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 2; i < 9; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("stone");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 9; i < 11; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 11; i < 13; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("stone");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 13; i < 19; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 19; i < 20; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 21; i < 23; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 23; i < 24; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 24; i < 28; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 28; i < 29; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("stone");
+        }
+    }
+    for (var j = 20; j < 21; j++) {
+        for (var i = 29; i < 31; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 0; i < 1; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 1; i < 2; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 2; i < 10; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("stone");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 10; i < 11; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 11; i < 14; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("stone");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 13; i < 19; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 19; i < 20; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 21; i < 23; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 23; i < 24; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 24; i < 27; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 27; i < 29; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("stone");
+        }
+    }
+    for (var j = 21; j < 22; j++) {
+        for (var i = 29; i < 31; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 22; j < 23; j++) {
+        for (var i = 0; i < 31; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("dirt-with-grass");
+        }
+    }
+    for (var j = 23; j < 31; j++) {
+        for (var i = 0; i < 31; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("dirt");
+        }
+    }
 }
 // modal
 $(document).ready(function () {
     $("#myModal").modal("show");
 })
-<<<<<<< HEAD
 
 //new game
 $("#new-game").on("click", function refresh() {
@@ -514,5 +771,3 @@ $("#new-game").on("click", function refresh() {
 $("#instructions").on("click", function modal() {
     $("#myModal").modal("show");
 });
-=======
->>>>>>> 0b1d918db69b02a5b42fe6980f3582b6f2fe5254
