@@ -103,3 +103,13 @@ function makeBricks() {
 $(document).ready(function () {
     $("#myModal").modal("show");
 })
+
+//new game
+$("#new-game").on("click", function refresh() {
+    window.location.reload();
+});
+
+// instructions
+$("#instructions").on("click", function modal() {
+    $("#myModal").modal("show");
+});
