@@ -445,25 +445,43 @@ function assignClass() {
     }
     
     for (var j = 17; j < 18; j++) {
-        for (var i = 0; i < 3; i++) {
-            var point = $(`[row=${j}][column=${i}]`);
-            point.addClass("wood");
-        }
-    }
-    for (var j = 17; j < 18; j++) {
-        for (var i = 3; i < 17; i++) {
+        for (var i = 0; i < 1; i++) {
             var point = $(`[row=${j}][column=${i}]`);
             point.addClass("sky");
         }
     }
     for (var j = 17; j < 18; j++) {
-        for (var i = 17; i < 22; i++) {
+        for (var i = 1; i < 2; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("trunk");
+        }
+    }
+    for (var j = 17; j < 18; j++) {
+        for (var i = 2; i < 4; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 17; j < 18; j++) {
+        for (var i = 4; i < 6; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("stone");
+        }
+    }
+    for (var j = 17; j < 18; j++) {
+        for (var i = 6; i < 18; i++) {
+            var point = $(`[row=${j}][column=${i}]`);
+            point.addClass("sky");
+        }
+    }
+    for (var j = 17; j < 18; j++) {
+        for (var i = 18; i < 21; i++) {
             var point = $(`[row=${j}][column=${i}]`);
             point.addClass("wood");
         }
     }
     for (var j = 17; j < 18; j++) {
-        for (var i = 22; i < 23; i++) {
+        for (var i = 21; i < 23; i++) {
             var point = $(`[row=${j}][column=${i}]`);
             point.addClass("sky");
         }
