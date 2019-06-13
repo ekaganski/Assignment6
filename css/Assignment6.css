@@ -80,13 +80,19 @@ body{
 
 /* tyles start */
 .wood{
-  background-image: url("");
+  background-image: url("../images/wood.jpg");
+}
+.trunk{
+  background-image: url("../images/trunk.jpg");
 }
 .stone{
-  background-image: url("");
+  background-image: url("../images/stone.jpg");
 }
 .dirt{
-  background-image: url("");
+  background-image: url("../images/dirt.jpg");
+}
+.dirt-with-grass{
+  background-image: url("../images/dirt-with-grass.jpg");
 }
 .sky{
   background-color: skyblue;
