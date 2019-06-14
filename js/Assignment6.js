@@ -7,9 +7,9 @@
 // Different Tools
 $(".axe").on("click", function () {
     $(".axe").addClass("changeToolColor");
-    $(".newDiv:not(.wood,.trunk)").addClass("noClick");
-    $(".wood").removeClass("noClick");
-    $(".trunk").removeClass("noClick");
+    // $(".newDiv:not(.wood,.trunk)").addClass("noClick");
+    // $(".wood").removeClass("noClick");
+    // $(".trunk").removeClass("noClick");
     $(".pickaxe").removeClass("changeToolColor");
     $(".shovel").removeClass("changeToolColor");
     $(".wood").on("click", function removeWood() {
@@ -19,7 +19,16 @@ $(".axe").on("click", function () {
     $(".trunk").on("click", function removeTrunk() {
         $(this).removeClass("trunk").addClass("sky");
         updateInventory("trunk");
-    })
+    });
+    $(".stone").on("click", ()=> {
+        $(".axe").addClass("changeToolColorToRed");
+    });
+    $(".dirt").on("click", ()=> {
+        $(".axe").addClass("changeToolColorToRed");
+    });
+    $(".dirt-with-grass").on("click", ()=> {
+        $(".axe").addClass("changeToolColorToRed");
+    });
 });
 
 $(".pickaxe").on("click", function changeToPickaxe() {
@@ -29,21 +38,42 @@ $(".pickaxe").on("click", function changeToPickaxe() {
     $(".stone").on("click", function removeStone() {
         $(this).removeClass("stone").addClass("sky");
         updateInventory("stone");
-    })
+    });
+    $(".dirt").on("click", ()=> {
+        $(".pickaxe").addClass("changeToolColorToRed");
+    });
+    $(".dirt-with-grass").on("click", ()=> {
+        $(".pickaxe").addClass("changeToolColorToRed");
+    });
+    $(".wood").on("click", ()=> {
+        $(".pickaxe").addClass("changeToolColorToRed");
+    });
+    $(".trunk").on("click", ()=> {
+        $(".pickaxe").addClass("changeToolColorToRed");
+    });
 });
 
 $(".shovel").on("click", function changeToShovel() {
     $(".shovel").addClass("changeToolColor");
     $(".axe").removeClass("changeToolColor");
-    $(".shovel").removeClass("changeToolColor");
+    $(".pickaxe").removeClass("changeToolColor");
     $(".dirt").on("click", function removeDirt() {
         $(this).removeClass("dirt").addClass("sky");
         updateInventory("dirt");
-    })
+    });
     $(".dirt-with-grass").on("click", function removeDirtWithGrass() {
         $(this).removeClass("dirt-with-grass").addClass("sky");
         updateInventory("dirt-with-grass");
-    })
+    });
+    $(".stone").on("click", ()=> {
+        $(".shovel").addClass("changeToolColorToRed");
+    });
+    $(".wood").on("click", ()=> {
+        $(".shovel").addClass("changeToolColorToRed");
+    });
+    $(".trunk").on("click", ()=> {
+        $(".shovel").addClass("changeToolColorToRed");
+    });
 });
 
 
@@ -111,7 +141,6 @@ function makeBricks() {
             row.push(newDiv);
         }
         $("#boardArray").append(row);
-
     }
     assignClass();
 }

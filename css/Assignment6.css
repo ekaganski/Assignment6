@@ -16,9 +16,10 @@ body{
 }
 #middle{
 
-  display: block;
+  display: flex;
   height: 100vh;
-  background-color: skyblue;
+  background-color: white;
+
 }
 #end {
   float: right;
@@ -61,9 +62,21 @@ body{
 .changeToolColor{
   border: 3px solid green;
 }
-.toolColorRed{
+/* .toolColorRed{
   border: 6px solid red;
+} */
+.changeToolColorToRed{
+    animation: wrong 0.5s 1;
 }
+
+@keyframes wrong
+{
+    0%      {background:none;}
+    25%     {background:red;}
+    75%     {background:red;}
+    100%    {background:none;}
+}
+
 #pickaxe{
   background-image: url("../images/pickaxe.jpg");
   background-position: cover;
