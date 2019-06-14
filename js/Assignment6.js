@@ -1,21 +1,15 @@
-
-// $(".sky").on("click", function something(){
-//     // $("#axe").removeClass("changeToolColor");
-//     alert("something");
-// })
-
 // Different Tools
 $(".axe").on("click", function () {
+    $(".newDiv.stone").off('click');
+    $(".newDiv.dirt").off('click');
+    $(".newDiv.dirt-with-grass").off('click');
     $(".axe").addClass("changeToolColor");
-    // $(".newDiv:not(.wood,.trunk)").addClass("noClick");
-    // $(".wood").removeClass("noClick");
-    // $(".trunk").removeClass("noClick");
     $(".pickaxe").removeClass("changeToolColor");
     $(".shovel").removeClass("changeToolColor");
     $(".wood").on("click", function removeWood() {
         $(this).removeClass("wood").addClass("sky");
         updateInventory("wood");
-    })
+    });
     $(".trunk").on("click", function removeTrunk() {
         $(this).removeClass("trunk").addClass("sky");
         updateInventory("trunk");
@@ -32,6 +26,10 @@ $(".axe").on("click", function () {
 });
 
 $(".pickaxe").on("click", function changeToPickaxe() {
+    // $(".newDiv.wood").off('click');
+    // $(".newDiv.trunk").off('click');
+    // $(".newDiv.dirt").off('click');
+    $(".newDiv.dirt-with-grass").off('click');
     $(".pickaxe").addClass("changeToolColor");
     $(".axe").removeClass("changeToolColor");
     $(".shovel").removeClass("changeToolColor");
@@ -54,6 +52,9 @@ $(".pickaxe").on("click", function changeToPickaxe() {
 });
 
 $(".shovel").on("click", function changeToShovel() {
+    // $(".newDiv.wood").off('click');
+    // $(".newDiv.trunk").off('click');
+    // $(".newDiv.stone").off('click');
     $(".shovel").addClass("changeToolColor");
     $(".axe").removeClass("changeToolColor");
     $(".pickaxe").removeClass("changeToolColor");
@@ -96,6 +97,9 @@ function updateInventory(material) {
 }
 
 $("#inventory").on("click", function checkMaterial() {
+    // $(".axe").removeClass("changeToolColor");
+    // $(".pickaxe").removeClass("changeToolColor");
+    // $(".shovel").removeClass("changeToolColor");
     if ($(this).hasClass("wood")) {
         $(".sky").on("click", function addWood() {
             $(this).addClass("wood").removeClass("sky");
@@ -274,4 +278,3 @@ $("#new-game").on("click", function refresh() {
 $("#instructions").on("click", function modal() {
     $("#myModal").modal("show");
 });
-
