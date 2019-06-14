@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // $(".sky").on("click", function something(){
 //     // $("#axe").removeClass("changeToolColor");
 //     alert("something");
@@ -529,3 +530,5 @@ $("#new-game").on("click", function refresh() {
 $("#instructions").on("click", function modal() {
     $("#myModal").modal("show");
 });
+=======
+>>>>>>> 68d827141cdd2292e75e08388f433d656e0b0e30
