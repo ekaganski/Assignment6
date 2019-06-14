@@ -61,6 +61,9 @@ body{
 .changeToolColor{
   border: 3px solid green;
 }
+.toolColorRed{
+  border: 6px solid red;
+}
 #pickaxe{
   background-image: url("../images/pickaxe.jpg");
   background-position: cover;

@@ -1,7 +1,15 @@
 
+// $(".sky").on("click", function something(){
+//     // $("#axe").removeClass("changeToolColor");
+//     alert("something");
+// })
+
 // Different Tools
-$(".axe").on("click", function changeToAxe() {
+$(".axe").on("click", function () {
     $(".axe").addClass("changeToolColor");
+    $(".newDiv:not(.wood,.trunk)").addClass("noClick");
+    $(".wood").removeClass("noClick");
+    $(".trunk").removeClass("noClick");
     $(".pickaxe").removeClass("changeToolColor");
     $(".shovel").removeClass("changeToolColor");
     $(".wood").on("click", function removeWood() {
@@ -12,9 +20,6 @@ $(".axe").on("click", function changeToAxe() {
         $(this).removeClass("trunk").addClass("sky");
         updateInventory("trunk");
     })
-    /*$(".stone").on("click", function () {
-        $(".axe").removeClass("changeToolColor");
-    })*/
 });
 
 $(".pickaxe").on("click", function changeToPickaxe() {
@@ -240,3 +245,4 @@ $("#new-game").on("click", function refresh() {
 $("#instructions").on("click", function modal() {
     $("#myModal").modal("show");
 });
+
