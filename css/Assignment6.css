@@ -145,18 +145,26 @@ body{
 
 /* modal start */
 .modal img {
-  width: 300px;
+  width: 400px;
+}
+.modal-dialog{
+  position: absolute;
+  margin: 0px 0px;
+  width: calc(100vw - 200px);
+  height: 100vh;
+  overflow-y: auto;
 }
 .modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 445px;
-  padding: 20px;
+  height: 100%;
+  width: 100%;
+  padding: 130px;
   font-family: 'Press Start 2P', cursive;
   color: white;
   border-style: none;
-  background-image: url("../images/modal-bg.jpg");
+  background-image: url("../images/bg-big.png");
 }
 .modal-content p {
   padding: 70px 70px;
@@ -179,7 +187,7 @@ body{
 }
 .start{
   position: absolute;
-  bottom: 30px;
+  bottom: 150px;
   background: white;
   height: 50px;
   width: 100px;
@@ -191,5 +199,11 @@ body{
 }
 .start:hover{
   background-color: #c9c8c8;
+}
+@media (min-width: 768px){
+.modal-dialog.new{
+  width: calc(100vw - 200px);
+  margin: 0px 0px;
+  }
 }
 /* modal end */
