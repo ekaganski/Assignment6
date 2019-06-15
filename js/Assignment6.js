@@ -1,8 +1,8 @@
 // Different Tools
 $(".tool.axe").on("click", function () {
-    // $(".newDiv.stone").off('click');
-    // $(".newDiv.dirt").off('click');
-    // $(".newDiv.dirt-with-grass").off('click');
+    $(".newDiv.stone").off('click');
+    $(".newDiv.dirt").off('click');
+    $(".newDiv.dirt-with-grass").off('click');
     // $(".dirt-with-grass").click(function (event) {
     //     event.stopImmediatePropagation();
     // });
@@ -59,10 +59,10 @@ $(".tool.pickaxe").on("click", function changeToPickaxe() {
     // $(".dirt").click(function (event) {
     //     event.stopImmediatePropagation();
     // });
-    // $(".newDiv.wood").off('click');
-    // $(".newDiv.trunk").off('click');
-    // $(".newDiv.dirt").off('click');
-    // $(".newDiv.dirt-with-grass").off('click');
+    $(".newDiv.wood").off('click');
+    $(".newDiv.trunk").off('click');
+    $(".newDiv.dirt").off('click');
+    $(".newDiv.dirt-with-grass").off('click');
     $(".pickaxe").addClass("changeToolColor");
     $(".axe").removeClass("changeToolColor");
     $(".shovel").removeClass("changeToolColor");
@@ -110,9 +110,9 @@ $(".tool.shovel").on("click", function changeToShovel() {
     // $(".stone").click(function (event) {
     //     event.stopImmediatePropagation();
     // });
-    // $(".newDiv.wood").off('click');
-    // $(".newDiv.trunk").off('click');
-    // $(".newDiv.stone").off('click');
+    $(".newDiv.wood").off('click');
+    $(".newDiv.trunk").off('click');
+    $(".newDiv.stone").off('click');
     $(".shovel").addClass("changeToolColor");
     $(".axe").removeClass("changeToolColor");
     $(".pickaxe").removeClass("changeToolColor");
