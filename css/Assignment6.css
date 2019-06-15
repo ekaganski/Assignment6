@@ -1,9 +1,8 @@
 body{
   margin:0; 
-  /* centering the website */
   font-size: 0px;
-  /*height: 100vh; */
 }
+/* board start*/
 #main {
   width: 100%;
   display: flex; 
@@ -19,7 +18,6 @@ body{
   display: flex;
   height: 100vh;
   background-color: white;
-
 }
 #end {
   float: right;
@@ -29,7 +27,6 @@ body{
   width: 200px; 
   height: 100vh;
   display: flex;
- 
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
@@ -62,9 +59,6 @@ body{
 .changeToolColor{
   border: 3px solid green;
 }
-/* .toolColorRed{
-  border: 6px solid red;
-} */
 .changeToolColorToRed{
     animation: wrong 0.5s 1;
 }
@@ -76,7 +70,9 @@ body{
     75%     {background:red;}
     100%    {background:none;}
 }
+/* board end*/
 
+/* tools start */
 #pickaxe{
   background-image: url("../images/pickaxe.jpg");
   background-position: cover;
@@ -117,26 +113,18 @@ body{
   display: inline-block;
   font-size: 10px;
 }
-/* .sky {
-  background-color: deepskyblue;
-} */
+/* board end*/
+
+/* tiles start */
 .sun {
   background-color: yellow;
 }
 .cloud {
   background-color: white;
 }
-/* .wood {
-  background-color: green;
+.sky{
+  background-color: skyblue;
 }
-.trunk {
-  background-color: brown;
-} */
-/* .stone {
-  background-color: gray;
-}  */
-
-/* tiles start */
 .wood{
   background-image: url("../images/wood.jpg");
 }
@@ -151,9 +139,6 @@ body{
 }
 .dirt-with-grass{
   background-image: url("../images/dirt-with-grass.jpg");
-}
-.sky{
-  background-color: skyblue;
 }
 /* tiles end */
 
