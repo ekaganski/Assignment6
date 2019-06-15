@@ -145,6 +145,7 @@ $(".tool.shovel").on("click", function changeToShovel() {
             $(".shovel").removeClass("changeToolColorToRed")
         }, 1000);}
     });
+
 });
 
 
@@ -167,9 +168,9 @@ function updateInventory(material) {
 }
 
 $("#inventory").on("click", function checkMaterial() {
-    // $(".axe").removeClass("changeToolColor");
-    // $(".pickaxe").removeClass("changeToolColor");
-    // $(".shovel").removeClass("changeToolColor");
+    $(".axe").removeClass("changeToolColor");
+    $(".pickaxe").removeClass("changeToolColor");
+    $(".shovel").removeClass("changeToolColor");
     if ($(this).hasClass("wood")) {
         $(".sky").on("click", function addWood() {
             $(this).addClass("wood").removeClass("sky");
@@ -204,7 +205,7 @@ $("#inventory").on("click", function checkMaterial() {
 })
 
 // board
-$(document).ready(makeBricks);
+$("#myModal").ready(makeBricks);
 function makeBricks() {
     for (var j = 0; j < 31; j++) {
         var row = [];
@@ -335,7 +336,7 @@ function assign(startRow, finishRow, startColumn, finishColumn, classToAdd) {
 }
 
 // modal
-$(document).ready(function () {
+$(window).on("load", function () {
     $("#myModal").modal("show");
 })
 
