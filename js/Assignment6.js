@@ -3,15 +3,6 @@ $(".tool.axe").on("click", function () {
     $(".newDiv.stone").off('click');
     $(".newDiv.dirt").off('click');
     $(".newDiv.dirt-with-grass").off('click');
-    // $(".dirt-with-grass").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
-    // $(".dirt").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
-    // $(".stone").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
     $(".axe").addClass("changeToolColor");
     $(".pickaxe").removeClass("changeToolColor");
     $(".shovel").removeClass("changeToolColor");
@@ -24,41 +15,32 @@ $(".tool.axe").on("click", function () {
         updateInventory("trunk");
     });
     $(".stone").on("click", () => {
-        if ($(".tool.axe").hasClass("changeToolColor")){
-        $(".axe").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".axe").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.axe").hasClass("changeToolColor")) {
+            $(".axe").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".axe").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
     $(".dirt").on("click", () => {
-        if ($(".tool.axe").hasClass("changeToolColor")){
-        $(".axe").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".axe").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.axe").hasClass("changeToolColor")) {
+            $(".axe").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".axe").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
     $(".dirt-with-grass").on("click", () => {
-        if ($(".tool.axe").hasClass("changeToolColor")){
-        $(".axe").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".axe").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.axe").hasClass("changeToolColor")) {
+            $(".axe").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".axe").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
 });
 
 $(".tool.pickaxe").on("click", function changeToPickaxe() {
-    // $(".trunk").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
-    // $(".wood").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
-    // $(".dirt-with-grass").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
-    // $(".dirt").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
     $(".newDiv.wood").off('click');
     $(".newDiv.trunk").off('click');
     $(".newDiv.dirt").off('click');
@@ -71,45 +53,40 @@ $(".tool.pickaxe").on("click", function changeToPickaxe() {
         updateInventory("stone");
     });
     $(".dirt").on("click", () => {
-        if ($(".tool.pickaxe").hasClass("changeToolColor")){
-        $(".pickaxe").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".pickaxe").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.pickaxe").hasClass("changeToolColor")) {
+            $(".pickaxe").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".pickaxe").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
     $(".dirt-with-grass").on("click", () => {
-        if ($(".tool.pickaxe").hasClass("changeToolColor")){
-        $(".pickaxe").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".pickaxe").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.pickaxe").hasClass("changeToolColor")) {
+            $(".pickaxe").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".pickaxe").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
     $(".wood").on("click", () => {
-        if ($(".tool.pickaxe").hasClass("changeToolColor")){
-        $(".pickaxe").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".pickaxe").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.pickaxe").hasClass("changeToolColor")) {
+            $(".pickaxe").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".pickaxe").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
     $(".trunk").on("click", () => {
-        if ($(".tool.pickaxe").hasClass("changeToolColor")){
-        $(".pickaxe").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".pickaxe").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.pickaxe").hasClass("changeToolColor")) {
+            $(".pickaxe").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".pickaxe").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
 });
 
 $(".tool.shovel").on("click", function changeToShovel() {
-    // $(".trunk").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
-    // $(".wood").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
-    // $(".stone").click(function (event) {
-    //     event.stopImmediatePropagation();
-    // });
     $(".newDiv.wood").off('click');
     $(".newDiv.trunk").off('click');
     $(".newDiv.stone").off('click');
@@ -125,27 +102,29 @@ $(".tool.shovel").on("click", function changeToShovel() {
         updateInventory("dirt-with-grass");
     });
     $(".stone").on("click", () => {
-        if ($(".tool.shovel").hasClass("changeToolColor")){
-        $(".shovel").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".shovel").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.shovel").hasClass("changeToolColor")) {
+            $(".shovel").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".shovel").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
     $(".wood").on("click", () => {
-        if ($(".tool.shovel").hasClass("changeToolColor")){
-        $(".shovel").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".shovel").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.shovel").hasClass("changeToolColor")) {
+            $(".shovel").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".shovel").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
     $(".trunk").on("click", () => {
-        if ($(".tool.shovel").hasClass("changeToolColor")){
-        $(".shovel").addClass("changeToolColorToRed");
-        setTimeout(() => {
-            $(".shovel").removeClass("changeToolColorToRed")
-        }, 1000);}
+        if ($(".tool.shovel").hasClass("changeToolColor")) {
+            $(".shovel").addClass("changeToolColorToRed");
+            setTimeout(() => {
+                $(".shovel").removeClass("changeToolColorToRed")
+            }, 1000);
+        }
     });
-
 });
 
 
